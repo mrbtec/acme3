@@ -1,13 +1,14 @@
 package main
 
 import (
-	_ "acme3/models"
-	_ "acme3/routers"
 	"fmt"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/plugins/auth"
 	_ "github.com/mattn/go-sqlite3"
+	_ "github.com/mrbtec/acme3/models"
+	_ "github.com/mrbtec/acme3/routers"
 )
 
 func init() {

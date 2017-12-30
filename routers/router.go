@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"acme3/controllers"
 	"github.com/astaxie/beego"
+	"github.com/mrbtec/acme3/controllers"
 )
 
 func init() {

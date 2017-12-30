@@ -1,17 +1,18 @@
 package controllers
 
 import (
-	"acme3/models"
-	pk "acme3/utilities/pbkdf2"
 	"encoding/hex"
 	"fmt"
+	"strings"
+	"time"
+
 	"github.com/alexcesaro/mail/gomail"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/validation"
+	"github.com/mrbtec/acme3/models"
+	pk "github.com/mrbtec/acme3/utilities/pbkdf2"
 	"github.com/twinj/uuid"
-	"strings"
-	"time"
 )
 
 func (this *MainController) Login() {
